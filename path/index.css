@@ -1,0 +1,468 @@
+@import url("index.less");
+
+input{
+	font-size: 0.26rem;
+}
+
+.global{
+	width: 100%;
+	height: 100%;
+	font-size: 0.36rem;
+	background: #C7D1E2;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.home, .addProds, .proDatail, .ucenter, .login, .register{
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: #C7D1E2;
+	box-shadow: 0 0 1rem rgba(40, 40, 40, .5);
+	height: 11.4rem;
+	overflow: scroll;
+	padding-top: 0.78rem;
+}
+
+.proDatail{
+	padding: 0.2rem;
+	width: 7.1rem;
+	padding-top: 0.78rem;
+}
+
+.proDetaiInfo{
+	text-align: left;
+}
+
+.proDetailText{
+	background: #ffffff;
+	padding: 0.2rem;
+}
+
+.footer{
+	.flex;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	.flexAc(center);
+	.flexJc(space-around);
+	width: 100%;
+	height: 0.78rem;
+	background: #CCCCCC;
+	z-index: 999;
+	font-size: 0.4rem;
+}
+
+.header{
+	.flex;
+	position: fixed;
+	left: 0;
+	top: 0;
+	.flexAc(center);
+	.flexJc(space-around);
+	width: 100%;
+	height: 0.78rem;
+	background: #000000;
+	color: #ffffff;
+	font-size: 0.36rem;
+	z-index: 99;
+}
+
+.home, .popupInfo, .proDatail, .ucenter{
+	text-align: center;
+	font-size: 0.36rem;
+	padding-bottom: 1rem;
+}
+
+.products{
+	width: 7rem;
+	margin: 0.2rem auto;
+}
+
+.head{
+	width: 1.5rem;
+	height: 1.5rem;
+	margin: 0.4rem auto;
+	padding-top: 0.4rem;
+}
+
+.productsInfo{
+	text-align: left;
+	position: relative;
+}
+.productsInfo>.bg{
+	background: #000000;
+	opacity: 0.6;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+.productsInfo>.info{
+	position: relative;
+	z-index: 9;
+	color: #ffffff;
+	padding: 0.2rem;
+}
+
+.proDetailText button{
+	color: #000000;
+	border:1px solid #cccccc;
+	width: 0.4rem;
+	text-align: center;
+	line-height: 0.4rem;
+}
+
+.smCart{
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	z-index: 9999;
+	height: 100%;
+	background: none;
+}
+
+.proDetailText input{
+	width: 0.4rem;
+	text-align: center;
+	border-bottom: 1px solid #cccccc;
+	border-top: 1px solid #cccccc;
+	border-left: none;
+	border-right: none;
+	line-height: 0.4rem;
+}
+
+.productsInfo>.info>h3, .proDetailText>h3{
+	font-size: 0.4rem;
+}
+
+.productsInfo>.info>p:nth-child(2){
+	.mOvh(2);
+}
+.productsInfo>.info>p, .proDetailText>p{
+	font-size: 0.32rem;
+}
+
+.productsInfo>.info>p>span, .proDetailText>p>span{
+	display: inline-block;
+	margin-right: 0.4rem;
+}
+.productsInfo>.info>p>span:last-child, .proDetailText>p>span:last-child{
+	text-decoration: line-through;
+	color: #cccccc;
+}
+
+
+.productsPic{
+	.flex;
+	.flexAc(center);
+	.flexJc(center);
+	height: 3.2rem;
+	overflow: hidden;
+}
+
+.proDetailPic{
+	.flex;
+	.flexAc(center);
+	.flexJc(center);
+	height: 5.2rem;
+	overflow: hidden;
+}
+
+.personDiv{
+	.flex;
+	.flexAc(center);
+	.flexJc(center);
+	text-align: left;
+	padding: 0.2rem 0;
+	border-bottom: 1px solid #cccccc;
+	width: 5.8rem;
+    margin: 0 auto;
+}
+.personDiv:last-child{
+	border-bottom: none;
+}
+
+.person{
+	width: 6.5rem;
+	margin: 0.4rem auto;
+	background: #ffffff;
+	height: 90%;
+}
+
+.personDiv>span:first-child{
+	width: 1.2rem;
+	text-align: right;
+}
+.personDiv>span:last-child{
+	width: 4.2rem;
+}
+
+
+.routCont{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+}
+
+
+.addProds{
+	padding-top: 0.4rem;
+	overflow: scroll;
+}
+
+.addProds>div{
+	.flex;
+	.flexAc(center);
+	.flexJc(center);
+	margin: 0.2rem;
+}
+.addProds>div>span{
+	display: block;
+	width: 1.8rem;
+	text-align: right;
+	padding-right: 0.2rem;
+}
+.addProds>div>input, .addProds>div>textarea, select{
+	width: 4rem;
+	border:none;
+	border-radius: 0.1rem;
+	height: 0.5rem;
+	padding-left:0.2rem;
+}
+
+.addProds>div>textarea{
+	height: 1rem;
+}
+
+.showDetail{
+	.flex-wrap(wrap);
+}
+
+
+.addProds>div.savePrd, .backHome{
+	background: #007AFF;
+	padding: 0.2rem 0.6rem;
+	color: #ffffff;
+	margin-top: 0.8rem;
+	margin-bottom: 1.3rem;
+	text-align: center;
+}
+button{
+	color: #ffffff;
+	background: none;
+	border: none;
+}
+
+.btnBlue button{
+	width: 4rem;
+    height: 0.8rem;
+    color: #ffffff;
+    background: #007AFF;
+}
+
+.smCartBg{
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: #000000;
+	opacity: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.smCartInfo{
+	position: absolute;
+	z-index: 9;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 50%;
+	background: #ffffff;
+}
+
+.addCart>button{
+	width: 4rem;
+    height: 0.8rem;
+    color: #ffffff;
+    background: #007AFF;
+}
+
+
+.menuList{
+	position: absolute;
+	background: #000000;
+	left: 0;
+	color: #ffffff;
+	top: 0.78rem;
+	z-index: 98;
+	text-align: center;
+}
+.menuList ul{
+	padding:0 0.2rem;
+}
+.menuList a{
+	color: #ffffff;
+}
+
+.menuList li{
+	padding: 0.2rem 0;
+	border-bottom: 1px solid #cccccc;
+}
+
+.menuList li:last-child{
+	border-bottom:0;
+}
+
+.headerNav{
+	position: relative;
+	z-index: 99;
+	.flex;
+	position: fixed;
+	left: 0;
+	top: 0;
+	.flexAc(center);
+	.flexJc(space-around);
+	width: 100%;
+	height: 0.78rem;
+	background: #000000;
+	color: #ffffff;
+	font-size: 0.36rem;
+}
+
+.loginInfo, .registerInfo{
+	padding-top: 0.4rem;
+}
+
+.loginInfo>div, .registerInfo>div{
+	.flex;
+	.flexAc(center);
+	.flexJc(space-around);
+	.flex-wrap(wrap);
+	margin: 0.3rem auto 0;
+}
+
+.loginInfo>div input, .registerInfo>div input{
+	width: 6rem;
+	margin: 0 auto 0;
+	height: 0.6rem;
+	padding-left: 0.2rem;
+	border: 1px solid #cccccc;
+}
+
+.loginBtn>div{
+	width: 6.2rem;
+	margin-top: 0.3rem;
+	.flex;
+	.flexAc(center);
+	.flexJc(space-around);
+}
+.loginBtn>div button, .registerInfo>div button{
+	background: #007AFF;
+	color: #ffffff;
+	font-size: 0.3rem;
+	text-align: center;
+	width: 100%;
+	height: 0.6rem;
+}
+
+.registerInfo>div button{
+	width: 6.2rem;
+	margin-top: 0.3rem;
+}
+
+.loginInfo>div.vcode, .registerInfo>div.vcode{
+	.flex-wrap(nowrap);
+	width: 6.2rem;
+}
+
+.vcode img{
+	width: 1.8rem;
+}
+
+.fade-appear {
+  opacity: 1;
+  z-index: 1;
+  margin-left: 100%;
+}
+
+.fade-appear.fade-appear-active {
+  opacity: 1;
+  z-index: 1;
+  margin-left: 0;
+  transition: all 300ms ease-in;
+}
+
+
+.fade-enter {
+  opacity: 1;
+  z-index: 9999;
+  margin-left: 100%;
+}
+
+.fade-enter.fade-enter-active {
+  opacity: 1;
+  z-index: 9999;
+  margin-left: 0;
+  transition: all 300ms ease-in;
+}
+
+.fade-leave {
+  opacity: 1;
+  margin-left: 0;
+}
+
+.fade-leave.fade-leave-active {
+  opacity: 1;
+  margin-left: -30%;
+  transition: all 300ms ease-in;
+}
+
+.bottomin-enter{
+  opacity: 1;
+  margin-bottom: -100%;
+}
+
+.bottomin-enter.bottomin-enter-active {
+  opacity: 1;
+  margin-bottom: 0;
+  transition: all 600ms ease-in;
+}
+
+.bottomin-leave {
+  opacity: 1;
+  margin-bottom: 0;
+}
+
+.bottomin-leave.bottomin-leave-active {
+  opacity: 1;
+  margin-bottom: -100%;
+  transition: all 600ms ease-in;
+}
+
+.topin-enter{
+  opacity: 1;
+  margin-top: -80%;
+}
+
+.topin-enter.topin-enter-active {
+  opacity: 1;
+  margin-top: 0;
+  transition: all 300ms ease-in;
+}
+
+.topin-leave {
+  opacity: 1;
+  margin-top: 0;
+}
+
+.topin-leave.topin-leave-active {
+  opacity: 1;
+  margin-top: -80%;
+  transition: all 300ms ease-in;
+}

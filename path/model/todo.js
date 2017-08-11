@@ -1,0 +1,1 @@
+export const todo = (type,text) => ({type:type,text});
